@@ -1,0 +1,4 @@
+For tweet text file one tweet per line.
+For label file one label per line.
+
+Same format for train, development, test set.
