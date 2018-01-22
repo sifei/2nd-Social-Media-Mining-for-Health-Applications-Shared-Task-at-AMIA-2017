@@ -11,14 +11,14 @@ def hand_pmi():
 
 	with open('../task1_all.txt','rb') as f:
 	    for row in f.readlines():
-		temp = row.split('\t')
-		tweets += temp[3] + ' '
-		if temp[2] == '0':
-		    neg += 1
-		    class1 += temp[3] + ' '
-		if temp[2] == '1':
-		    pos += 1
-		    class2 += temp[3] + ' '
+			temp = row.split('\t')
+			tweets += temp[3] + ' '
+			if temp[2] == '0':
+				neg += 1
+				class1 += temp[3] + ' '
+			if temp[2] == '1':
+				pos += 1
+				class2 += temp[3] + ' '
 	class1 = class1.lower().split()
 	class2 = class2.lower().split()
 	allclass = tweets.lower().split()
@@ -32,20 +32,20 @@ def hand_pmi():
 			wordset1[i] = 1
 	for i in class2:
 	    if i in wordset2:
-		wordset2[i] += 1
+			wordset2[i] += 1
 	    else:
-		wordset2[i] = 1
+			wordset2[i] = 1
 	for i in allclass:
 	    if i in wordset:
-		wordset[i] += 1
+			wordset[i] += 1
 	    else:
-		wordset[i] = 1
+			wordset[i] = 1
 
 	PMI_scores = []
 	for word in wordset:
 	    try:
-		PMI = wordset2[word]*neg*1.0/pos/wordset1[word]
-		PMI_scores.append([word, math.log(PMI,2)])
+			PMI = wordset2[word]*neg*1.0/pos/wordset1[word]
+			PMI_scores.append([word, math.log(PMI,2)])
 	    except:
 			pass
 
