@@ -10,3 +10,5 @@ To average the prediction probability
 ```
 python average.py
 ```
+
+The [data_sample folder](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task1/data_sample) contains sample inputs and output prediction result file.
