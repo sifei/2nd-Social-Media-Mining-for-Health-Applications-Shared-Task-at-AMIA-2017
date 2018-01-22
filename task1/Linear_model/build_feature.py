@@ -10,7 +10,7 @@ import numpy as np
 from gensim import *
 from gensim.models import * 
 import math
-
+from hand_pmi import *
 
 # using NRC-Canada unigram and bigrams sentiment lexicon
 senti_uni = {}
