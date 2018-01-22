@@ -16,14 +16,14 @@ from hand_pmi import *
 senti_uni = {}
 with open('Lexicon/unigrams-pmilexicon.txt','rb') as f:
     for row in f.readlines():
-	row = row.split('\t')
-	senti_uni[row[0]] = float(row[1])
+		row = row.split('\t')
+		senti_uni[row[0]] = float(row[1])
 
 senti_bi = {}
 with open('Lexicon/bigrams-pmilexicon.txt','rb') as f:
     for row in f.readlines():
-	row = row.split('\t')
-	senti_bi[row[0]] = float(row[1])
+		row = row.split('\t')
+		senti_bi[row[0]] = float(row[1])
 
 # creating negation related features 	
 def negated(post):
@@ -44,11 +44,11 @@ cui2idx = {}
 type2idx = {'SIDER':0,'CHV':1,'COSTART':2,'DIEGO_Lab':3}
 with open('ADR_lexicon.tsv','rb') as f:
     for line in f:
-	term = line.split('\t')
-	lexicon[term[1]] = [term[0],term[2].strip()]
-	if term[0] not in cui2idx:
-	    cui2idx[term[0]] = len(cui2idx)
-	    cuis.append(term[0])
+		term = line.split('\t')
+		lexicon[term[1]] = [term[0],term[2].strip()]
+		if term[0] not in cui2idx:
+			cui2idx[term[0]] = len(cui2idx)
+			cuis.append(term[0])
 
 
 stopwords = {}
@@ -60,8 +60,8 @@ with open("stop-words.txt",'r') as f:
 def loadData(filename):
     data = []
     with open(filename,'rb') as f:
-	for row in f.readlines():
-	    data.append(row.split('\t'))
+		for row in f.readlines():
+	    	data.append(row.split('\t'))
     return data
 
 # replace user mention by special word "TARGET" and remove all stopwords.
