@@ -267,3 +267,4 @@ def build_test(filename_train, filename_dev):
 build_train('task1_full_text.txt','task1_full_label.txt')
 build_test('task1_full_text.txt','task1_test.txt')
 
+ 
