@@ -1,6 +1,6 @@
 # Deep model for 2nd Social Media Mining for Health Applications Shared Task at AMIA 2017
 
-Implementation of CNN and attention based CNN model.
+Implementation of traditional machine learning method (logisitic regression).
  * By default, training, deveploment and test set on ``data_sample`` directory.
 
 ## Required Packages
