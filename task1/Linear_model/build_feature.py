@@ -124,6 +124,7 @@ def w2v(model, tweet):
     return vec/count
 
 # Load Pointwise mutual information(PMI) pre-computed by hand_pmi.py
+hand_pmi()
 PMI_scores = {}
 with open('analysis/hand_make.csv','rb') as f:
     reader = csv.reader(f)
