@@ -5,5 +5,5 @@ Same format for train, development, test set.
 
 
 The output of prediction format is 
-TweetID \t Prediction_Result
+TweetID,Prediction_Result
 One prediction per line
