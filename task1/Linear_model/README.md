@@ -12,7 +12,7 @@ Implementation of CNN and attention based CNN model.
 
 ## Usage
 
-Please note that this model takes as input the path of the data folder and not paths to each individual file. A data folder is expected to have the following files: `train_ids.txt`, `dev_ids.txt`, `test_ids.txt`, and `dataset.txt`. Please see the example_dataset directory for an example of the format. 
+Please note that this model takes as input the path of the data folder and not paths to each individual file. A data folder is expected to have the following files: `task1_full_text.txt`, `task1_full_label.txt`, and `task1_test_text.txt`. Please see the example_dataset directory for an example of the format. 
 
 - More info about the dataset format can be found [here](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task1/data_sample).
 
