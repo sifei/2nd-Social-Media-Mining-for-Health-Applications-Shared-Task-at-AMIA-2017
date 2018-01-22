@@ -88,10 +88,12 @@ https://nlp.stanford.edu/projects/glove/
 
 ## Author
 
-> Sifei Han 
+> Sifei Han
+
 > sehan2 **[at]** g.uky.edu
 
 > Anthony Rios
+
 > anthonymrios **[at]** gmail.com
 
 
