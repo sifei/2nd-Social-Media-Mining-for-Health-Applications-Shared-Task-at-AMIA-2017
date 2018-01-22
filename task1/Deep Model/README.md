@@ -82,11 +82,15 @@ co-located with the American Medical Informatics Association Annual Symposium (A
 }
 ```
 
-For the word-level counterpart to this model, see this [repo](https://github.com/bionlproc/relation-extraction-rnn) by Anthony Rios.
- 
+
+You can get the embeddings here:
+https://nlp.stanford.edu/projects/glove/
+
 ## Author
 
 > Sifei Han 
-> sehan2 **[at]** g.uky.edu  
+> sehan2 **[at]** g.uky.edu
+> Anthony Rios
+> anthonymrios **[at]** gmail.com
 
 
