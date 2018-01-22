@@ -12,7 +12,7 @@ Implementation of CNN and attention based CNN model.
 
 ## Usage
 
-Please note that this model takes as input the path of the data folder and not paths to each individual file. A data folder is expected to have the following files: `train_ids.txt`, `dev_ids.txt`, `test_ids.txt`, and `dataset.txt`. Please see the example_dataset directory for an example of the format. 
+Please note that this model takes as input the path of the data folder and not paths to each individual file. A data folder is expected to have the following files: `task1_full_text.txt`, `task1_full_label.txt`, and `task1_test_text.txt`. Please see the example_dataset directory for an example of the format. 
 
 - More info about the dataset format can be found [here](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task1/data_sample).
 
@@ -21,7 +21,7 @@ Please note that this model takes as input the path of the data folder and not p
 ### Training and Evaluating
 
 ```
-bash run_loop.sh
+bash run_full.sh
 ```
 
 ```
@@ -64,6 +64,33 @@ optional arguments:
 
 ```
 
+```
+bash run_test_full.sh
+```
+```
+usage: test.py [-h] [--checkpoint_model CHECKPOINT_MODEL] [--data_X DATA_X]
+                [--data_Y DATA_Y] [--scoring SCORING]
+                [--minibatch_size MINIBATCH_SIZE]
+                [--name_count NAME_COUNT] 
+                
+Get prediction from trained MODEL on a given dataset
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --checkpoint_model CHECKPOINT_MODEL
+                        Checkpoint Model
+  --data_X DATA_X   
+                        path to the test/validation dataset
+  --data_X DATA_Y   
+                        path to the test/validation dataset labels
+  --scoing SCORING  
+                        evaluation measure
+  --minibatch-size MINIBATCH_SIZE
+                        number of instances in a minibatch
+  --name_count NAME_COUNT
+                        output numpy file
+
+```
 ## Acknowledgements
 
 Please consider citing the following paper(s) if you use this software in your work:
