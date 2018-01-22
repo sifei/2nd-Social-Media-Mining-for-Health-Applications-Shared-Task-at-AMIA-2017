@@ -90,6 +90,7 @@ https://nlp.stanford.edu/projects/glove/
 
 > Sifei Han 
 > sehan2 **[at]** g.uky.edu
+
 > Anthony Rios
 > anthonymrios **[at]** gmail.com
 
