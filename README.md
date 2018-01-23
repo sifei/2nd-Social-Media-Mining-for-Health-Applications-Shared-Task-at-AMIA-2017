@@ -5,14 +5,14 @@ Automatic classification of adverse drug reaction (ADR) mentioning posts. It is 
 
 In this task our best model is ensemble the traditional machine learning approach (logisitic regression) with deep learning model (CNN with attention). 
 
-The [task1](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task1) folder contains the linear model and deep model we used for the shared task. The example of input file fomrat also provided at [data_sample](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task1/data_sample) folder.
+The [task1](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task1) folder contains the linear model and deep model we used for the shared task. The example of input file format also provided at [data_sample](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task1/data_sample) folder.
 
 ## Task2
 Automatic classification of posts describing medication intake. It is a three-class classification.
 
 In this task our best model is averaging 10 deep learning models (CNN with attention). 
 
-The [task2](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task2) folder contains the linear model and deep model we used for the shared task. The example of input file fomrat also provided at [data_sample](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task2/data_sample) folder.
+The [task2](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task2) folder contains the linear model and deep model we used for the shared task. The example of input file format also provided at [data_sample](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task2/data_sample) folder.
 
 
 More shared task description please ref: https://healthlanguageprocessing.org/sharedtask2/
