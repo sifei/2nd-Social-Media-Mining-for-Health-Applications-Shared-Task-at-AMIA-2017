@@ -41,6 +41,36 @@ Train and evaluate MODEL on a given dataset
 
 optional arguments:
   -h, --help            show this help message and exit
+  --num_epochs NUM_EPOCHS
+                        number of updates to make
+  --num_models NUM_MODELS
+                        number of models
+  --lstm_hidden_state LSTM_HIDDEN_STATE
+                        LSTM hidden state size
+  --word_vectors WORD_VECTORS
+                        word vectors filepath
+  --checkpoint_dir CHECKPOINT_DIR
+                        checkpoint
+  --hidden_state HIDDEN_STATE
+                        hidden layer size
+  --learn_embeddings LEARN_EMBEDDINGS
+                        learn embedding parameters
+  --min_df MIN_DF       minimun word count
+  --lr LR               learning rate
+  --penalty PENALTY     regularization parameter
+  --p_penalty P_PENALTY
+                        self-regularization parameter
+  --dropout DROPOUT     dropout value
+  --lstm_dropout LSTM_DROPOUT
+                        LSTM dropout value
+  --lr_decay LR_DECAY
+                        learning rate decay
+  --minibatch_size MINIBATCH_SIZE
+                        mini-batch size
+  --val_minibatch_size VAL_MINIBATCH_SIZE
+                        val mini-batch size
+  --model_type MODEL_TYPE
+                        neural net architecutre
   --train_data_X TRAIN_DATA_X   
                         path to the train dataset
   --train_data_X TRAIN_DATA_Y   
@@ -49,19 +79,14 @@ optional arguments:
                         path to the dev/test dataset
   --val_data_X VAL_DATA_Y   
                         path to the dev/test dataset labels
-  --batch-size BATCH_SIZE
-                        number of instances in a minibatch
-  --num-epoch NUM_EPOCH
-                        number of passes over the training set
-  --learning-rate LEARNING_RATE
-                        learning rate, default depends on optimizer
-  --word_vectors WORD_VECTORS
-                        word vectors filepath
-  --embedding-factor EMBEDDING_FACTOR
-                        learning rate multiplier for embeddings
-  --lr_decay LR_DECAY_RATE    exponential decay for learning rate
   --seed SEED           seed for training
-
+  --grad_clip GRAD_CLIP
+                        gradient clip value
+  --cnn_conv_size CNN_CONV_SIZE
+                        CNN covolution sizes (widths)
+  --num_feat_maps NUM_FEAT_MAPS
+                        number of CNN feature maps
+  --num_att NUM_ATT     number of attention vectors
 ```
 
 ```
