@@ -1,6 +1,6 @@
 # Deep model for 2nd Social Media Mining for Health Applications Shared Task at AMIA 2017
 
-Implementation of traditional machine learning method (logisitic regression).
+Implementation of traditional machine learning method (logistic regression).
  * By default, training, deveploment and test set on ``data_sample`` directory.
 
 ## Required Packages
