@@ -1,22 +1,27 @@
-# Deep model for 2nd Social Media Mining for Health Applications Shared Task at AMIA 2017
+# UKNLP team's supervised models for the 2nd Social Media Mining for Health Applications Shared Task at AMIA 2017
 
-## Task1
-Automatic classification of adverse drug reaction (ADR) mentioning posts. It is a binary classification.
+This repository contains code for task 1 and 2 of the 2nd Social Media Mining for Health Applications shared task at AMIA 2017 which employed supervised framework for identifying ADR mentions and classifying medication intake messages on Twitter. The tasks are described below with more documentation available in their respective subdirectories.
 
-In this task, our best model is ensemble the traditional machine learning approach (logistic regression) with deep learning model (CNN with attention). 
+For info on the related shared task, please refer to: https://healthlanguageprocessing.org/sharedtask2/
 
-The [task1](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task1) folder contains the linear model and deep model we used for the shared task. The example of input file format also provided at the [data_sample](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task1/data_sample) folder.
+## Task 1
 
-## Task2
-Automatic classification of posts describing medication intake. It is a three-class classification.
+The first task is binary classification of twitter posts for mentions of adverse drug reactions (ADRs). The program takes as input a post and returns a binary 0/1 indicating whether it or not contains ADR mentions.
 
-In this task, our best model is averaging ten deep learning models (CNN with attention). 
+In this task our best model is an ensemble involving both a traditional machine learning approach (logistic regression) and a deep learning approach (CNN with attention). 
 
-The [task2](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task2) folder contains the linear model and deep model we used for the shared task. The example of input file format also provided at the [data_sample](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task2/data_sample) folder.
+The [task1](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task1) folder contains the linear and deep model submitted for the shared task. An example of input file format is also provided at [task1/data_sample](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task1/data_sample) folder.
 
+## Task 2
+The second task is classification of posts describing medication intake. Given a twitter post, the program returns one of three possible categorical labels:
 
-More shared task description please ref: https://healthlanguageprocessing.org/sharedtask2/
+- *personal medication intake* – tweets in which the user clearly expresses a personal medication intake/consumption
+- *possible medication intake* – tweets that are ambiguous but suggest that the user may have taken the medication
+- *non-intake* – tweets that mention medication names but do not indicate personal intake
 
+In this task our best model is an ensemble involving 10 deep learning models (CNN with attention). 
+
+The [task2](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task2) folder contains the linear and deep model submitted for this task. An example of input file format is also provided at [task2/data_sample](https://github.com/sifei/2nd-Social-Media-Mining-for-Health-Applications-Shared-Task-at-AMIA-2017/tree/master/task2/data_sample) folder.
 
 ## Acknowledgements
 
@@ -35,4 +40,3 @@ co-located with the American Medical Informatics Association Annual Symposium (A
   organization={AMIA}
 }
 ```
-
